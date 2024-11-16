@@ -1,0 +1,131 @@
+
+body{
+    margin: 0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}  
+nav{
+    background-color: white;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 4rem ;
+    border: 2px solid #d9cece;
+    border-left: 0ch;
+    border-top: 0ch;
+    border-right: 0ch;
+}
+.nav-content-left{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-content-left img{
+    width: 150px;
+    height: 65px;
+}
+.nav-content-left input{
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 1rem 2.5rem;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+    outline: grey;
+}
+.nav-content-left span{
+    position: relative;
+    z-index: 2;
+    right: 17.8rem;
+    color: grey;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+.nav-content-right{
+    display: flex;
+    gap: 1rem;
+}
+.nav-content-img{
+    align-content: center;
+    padding-top: 5px;
+}
+.nav-content-right img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.nav-content span{
+    font-size: 20px;
+    color: black;
+}
+
+.nav-content-right-last span{
+    font-size: 16px;
+    color: black;
+    position: relative;
+    top: 10px;
+}
+.nav-content-right-last p{
+    font-size: 14px;
+    color: grey;
+}
+@media (width < 930px) {
+    .nav-content-left input{
+        display: none;
+    }
+}
+hr{
+    border:thin;
+    background-color: #c5bbbb;
+    height: 2px;
+}
+@media (width < 640px) {
+   nav{
+    padding: 5px 1rem ; 
+    align-items: start;
+   }
+   .nav-content-right-last{
+    display: none;
+   }
+   .nav-content {
+    padding-left: 8rem;
+    padding-top: 0.5rem;
+   }
+}
+.Main_menu{
+    padding: 1rem 2rem;
+    background-color: grey;
+    max-width: 220px;
+    padding-bottom: 4rem;
+    border: 2px solid #d9cece;
+    border-left: 0ch;
+    border-top: 0ch;
+    border-bottom: 0ch;
+}
+.Main_menu h3{
+    font-weight: 600;
+    font-size: 15px;
+}
+.Main_menu .links:hover{
+    color: blue;
+}
+.Main_menu ul{
+    padding-top: 1rem;
+    position: relative;
+    right: 2rem;
+}
+.Main_menu .links{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
